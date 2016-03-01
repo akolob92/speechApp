@@ -23,6 +23,9 @@ describe('my app', function() {
         toMatch(/partial for view 1/);
     });
 
+    it('should have textarea on the page', function() {
+      expect(element(by.css('textarea.text')).isDisplayed()).toBe(true);
+    })
   });
 
 
